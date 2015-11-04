@@ -14,5 +14,8 @@ namespace s0902252.Models
         [Required]
         [Display(Name="Categorie")]
         public string CategoryName { get; set; }
+
+        // Add foreign objects
+        public virtual ICollection<Review> Reviews { get; set; }
     }
 }
