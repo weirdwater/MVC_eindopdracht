@@ -27,5 +27,8 @@ namespace s0902252.Models
         // Should not be visible during creation.
         public bool IsActive { get; set; }
         public bool IsAdmin { get; set; }
+
+        // Add foreign objects
+        public virtual ICollection<Review> Reviews { get; set; }
     }
 }
