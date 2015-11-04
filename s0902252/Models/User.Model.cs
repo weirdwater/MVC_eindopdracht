@@ -30,5 +30,6 @@ namespace s0902252.Models
 
         // Add foreign objects
         public virtual ICollection<Review> Reviews { get; set; }
+        public virtual ICollection<Rating> Ratings { get; set; }
     }
 }

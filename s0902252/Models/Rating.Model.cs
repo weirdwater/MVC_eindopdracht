@@ -15,5 +15,11 @@ namespace s0902252.Models
         [Range(1, 5)]
         [Display(Name="Beoordeling")]
         public int RatingValue { get; set; }
+
+        // Add foreign objects
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
+        public int ReviewId { get; set; }
+        public virtual Review Review { get; set; }
     }
 }
